@@ -18,11 +18,11 @@ def predict():
     print("results is:",result)
    
     #return render_template('index.html',pred = result)
-    return render_template('result.html',pred = result)
+    return render_template('resu.html',pred = result)
 
 
 
     
 
 if __name__ == "__main__":
-    app.run(debug = True) 
+    app.run(host = '0.0.0.0',port = 8080) 
